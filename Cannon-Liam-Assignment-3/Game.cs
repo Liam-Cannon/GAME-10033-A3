@@ -8,28 +8,26 @@ namespace MohawkGame2D
     
     public class Game
     {
-        
+        Soul soul = new Soul();
+
         public void Setup()
         {
-            Window.SetSize(800, 600);
-            Window.SetTitle("Star Dream Simulation");
+            Window.SetSize(600, 600);
+            Window.SetTitle("Soul Box Simulation");
             Window.ClearBackground(Color.Black);
-
-            void DrawStar(float x, float y)
-            {
-                Draw.SetLineSize(0);
-                Draw.SetFillColor(Color.Yellow);
-                //Draw.Triangle
+            
 
 
-
-            }
 
         }
 
         
         public void Update()
         {
+            Window.ClearBackground(Color.Black);
+            soul.Update();
+
+
 
         }
     }
